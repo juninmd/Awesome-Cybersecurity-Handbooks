@@ -1,0 +1,44 @@
+[[allowlist]]
+description = "False positive: generic-api-key in handbooks/persistence.md"
+rules = ["generic-api-key"]
+paths = ["handbooks/persistence.md"]
+
+[[allowlist]]
+description = "False positive: aws-access-token in handbooks/cloud.md"
+rules = ["aws-access-token"]
+paths = ["handbooks/cloud.md"]
+
+[[allowlist]]
+description = "False positive: generic-api-key in handbooks/03_web_application_analysis.md"
+rules = ["generic-api-key"]
+paths = ["handbooks/03_web_application_analysis.md"]
+
+[[allowlist]]
+description = "False positive: generic-api-key in handbooks/04_database_assessment.md"
+rules = ["generic-api-key"]
+paths = ["handbooks/04_database_assessment.md"]
+
+[[allowlist]]
+description = "False positive: hashicorp-tf-password in cryptography.md"
+rules = ["hashicorp-tf-password"]
+paths = ["cryptography.md"]
+
+[[allowlist]]
+description = "False positive: private-key in cryptography.md"
+rules = ["private-key"]
+paths = ["cryptography.md"]
+
+[[allowlist]]
+description = "False positive: jwt in payloads.md"
+rules = ["jwt"]
+paths = ["payloads.md"]
+
+[[allowlist]]
+description = "False positive: generic-api-key in 04_database_assessment.md"
+rules = ["generic-api-key"]
+paths = ["04_database_assessment.md"]
+
+[[allowlist]]
+description = "False positive: jwt in 03_web_application_analysis.md"
+rules = ["jwt"]
+paths = ["03_web_application_analysis.md"]
