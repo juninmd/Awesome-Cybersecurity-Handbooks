@@ -36,9 +36,9 @@ paths = ["payloads.md"]
 [[allowlist]]
 description = "False positive: generic-api-key in 04_database_assessment.md"
 rules = ["generic-api-key"]
-paths = ["04_database_assessment.md"]
+paths = ["handbooks/04_database_assessment.md"]
 
 [[allowlist]]
 description = "False positive: jwt in 03_web_application_analysis.md"
-rules = ["jwt"]
+paths = ["handbooks/03_web_application_analysis.md"]
 paths = ["03_web_application_analysis.md"]
