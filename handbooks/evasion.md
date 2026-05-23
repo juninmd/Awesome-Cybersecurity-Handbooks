@@ -31,6 +31,7 @@
 | Donut | Generates x86, x64, or AMD64+x86 position-independent shellcode that loads .NET Assemblies, PE files, and other Windows payloads from memory and runs them with parameters. | https://github.com/TheWover/donut |
 | EDRSandBlast | EDRSandBlast is a tool written in C that weaponize a vulnerable signed driver to bypass EDR detections (Notify Routine callbacks, Object Callbacks and ETW TI provider) and LSASS protections. | https://github.com/wavestone-cdt/EDRSandblast |
 | Freeze | Freeze is a payload toolkit for bypassing EDRs using suspended processes, direct syscalls, and alternative execution methods | https://github.com/Tylous/Freeze |
+| Fritter | The evasive cousin of Donut. | https://github.com/0xROOTPLS/Fritter |
 | Hades | Go shellcode loader that combines multiple evasion techniques | https://github.com/f1zm0/hades |
 | Invoke-Obfuscation | PowerShell Obfuscator | https://github.com/danielbohannon/Invoke-Obfuscation |
 | LimeLighter | A tool for generating fake code signing certificates or signing real ones | https://github.com/Tylous/Limelighter |
@@ -57,7 +58,7 @@
 | ShellGhost | A memory-based evasion technique which makes shellcode invisible from process start to end. | https://github.com/lem0nSec/ShellGhost |
 | Shikata Ga Nai | Shikata ga nai (仕方がない) encoder ported into go with several improvements. | https://github.com/EgeBalci/sgn |
 | Simple Injector | A simple injector that uses LoadLibraryA | https://github.com/tomcarver16/SimpleInjector |
-| TreatCheck | Identifies the bytes that Microsoft Defender / AMSI Consumer flags on. | https://github.com/rasta-mouse/ThreatCheck |
+| ThreatCheck | Identifies the bytes that Microsoft Defender / AMSI Consumer flags on. | https://github.com/rasta-mouse/ThreatCheck |
 | unicorn | Unicorn is a simple tool for using a PowerShell downgrade attack and inject shellcode straight into memory. Based on Matthew Graeber's powershell attacks and the powershell bypass technique presented by David Kennedy (TrustedSec) and Josh Kelly at Defcon 18. | https://github.com/trustedsec/unicorn |
 | Veil | Veil is a tool designed to generate metasploit payloads that bypass common anti-virus solutions. | https://github.com/Veil-Framework/Veil |
 | WorldWritableDirs.txt | World-writable directories in %windir% | https://gist.github.com/mattifestation/5f9de750470c9e0e1f9c9c33f0ec3e56 |

