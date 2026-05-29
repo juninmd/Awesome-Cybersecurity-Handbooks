@@ -1,0 +1,99 @@
+site_name: Awesome Cybersecurity Handbooks
+site_description: A comprehensive collection of cybersecurity handbooks and personal notes from CTFs and red teaming
+site_author: 0xsyr0
+site_url: https://juninmd.github.io/Awesome-Cybersecurity-Handbooks
+repo_url: https://github.com/juninmd/Awesome-Cybersecurity-Handbooks
+edit_uri: edit/main/
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+nav:
+  - Home: README.md
+  - Core Handbooks:
+      - 01 Information Gathering: handbooks/01_information_gathering.md
+      - 02 Vulnerability Analysis: handbooks/02_vulnerability_analysis.md
+      - 03 Web Application Analysis: handbooks/03_web_application_analysis.md
+      - 04 Database Assessment: handbooks/04_database_assessment.md
+      - 05 Password Attacks: handbooks/05_password_attacks.md
+      - 06 Wireless Attacks: handbooks/06_wireless_attacks.md
+      - 07 Reverse Engineering: handbooks/07_reverse_engineering.md
+      - 08 Exploitation Tools: handbooks/08_exploitation_tools.md
+      - 09 Sniffing & Spoofing: handbooks/09_sniffing_&_spoofing.md
+      - 10 Post Exploitation: handbooks/10_post_exploitation.md
+      - 11 Forensics: handbooks/11_forensics.md
+      - 12 Reporting Tools: handbooks/12_reporting_tools.md
+      - 13 Social Engineering Tools: handbooks/13_social_engineering_tools.md
+  - Offensive Security:
+      - Command and Control: handbooks/command_and_control.md
+      - Delivery: handbooks/delivery.md
+      - Evasion: handbooks/evasion.md
+      - Exploitation: handbooks/exploitation.md
+      - Malware Development: handbooks/malware_development.md
+      - Payloads: handbooks/payloads.md
+      - Persistence: handbooks/persistence.md
+      - Social Engineering: handbooks/operation_security.md
+  - Defensive Security:
+      - Detection Engineering: handbooks/detection_engineering.md
+      - DFIR: handbooks/dfir.md
+      - EDR & XDR: handbooks/edr_xdr.md
+      - IDS & IPS: handbooks/ids_ips.md
+      - Security Operations Center: handbooks/security_operations_center.md
+      - SIEM: handbooks/siem.md
+      - SOAR & SecOps: handbooks/soar_&_secops.md
+      - Threat Hunting: handbooks/threat_hunting.md
+      - Threat Modeling: handbooks/threat_modeling.md
+  - Infrastructure & Cloud:
+      - Attack Surface Management: handbooks/attack_surface_management.md
+      - Cloud: handbooks/cloud.md
+      - Container: handbooks/container.md
+      - Hardware: handbooks/hardware.md
+      - IoT: handbooks/iot.md
+      - Mobile: handbooks/mobile.md
+  - Special Topics:
+      - AI & ML: handbooks/ai_&_ml.md
+      - Basics: handbooks/basics.md
+      - Blockchain: handbooks/blockchain.md
+      - Bug Bounty: handbooks/bug_bounty.md
+      - Cryptography: handbooks/cryptography.md
+      - CVE: handbooks/cve.md
+      - Cyber Threat Intelligence: handbooks/cyber_threat_intelligence.md
+      - Decrypter: handbooks/decrypter.md
+      - Frameworks: handbooks/frameworks.md
+      - OSINT: handbooks/osint.md
+      - Privacy: handbooks/privacy.md
+      - Secure Architecture: handbooks/secure_architecture.md
+      - Simulation & Emulation: handbooks/simulation_emulation.md
+      - Templates: handbooks/templates.md
+      - Wordlists: handbooks/wordlists.md
