@@ -5,7 +5,8 @@
 # Awesome Cybersecurity Handbooks [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 ![GitHub stars](https://img.shields.io/github/stars/0xsyr0/Awesome-Cybersecurity-Handbooks?logoColor=yellow) ![GitHub forks](https://img.shields.io/github/forks/0xsyr0/Awesome-Cybersecurity-Handbooks?logoColor=purple) ![GitHub watchers](https://img.shields.io/github/watchers/0xsyr0/Awesome-Cybersecurity-Handbooks?logoColor=green)</br>
-![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/0xsyr0/Awesome-Cybersecurity-Handbooks) ![GitHub contributors](https://img.shields.io/github/contributors/0xsyr0/Awesome-Cybersecurity-Handbooks)
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/0xsyr0/Awesome-Cybersecurity-Handbooks) ![GitHub contributors](https://img.shields.io/github/contributors/0xsyr0/Awesome-Cybersecurity-Handbooks)</br>
+![CI/CD Pipeline](https://github.com/juninmd/Awesome-Cybersecurity-Handbooks/actions/workflows/ci.yml/badge.svg) [![codecov](https://codecov.io/gh/juninmd/Awesome-Cybersecurity-Handbooks/branch/main/graph/badge.svg)](https://codecov.io/gh/juninmd/Awesome-Cybersecurity-Handbooks) ![GitHub Pages](https://img.shields.io/github/deployments/juninmd/Awesome-Cybersecurity-Handbooks/github-pages)
 
 A huge chunk of my personal notes since I started playing CTFs and working as a red teamer. These are living documents and I updated or add to them relatively often.
 
