@@ -8,6 +8,10 @@
 ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/0xsyr0/Awesome-Cybersecurity-Handbooks) ![GitHub contributors](https://img.shields.io/github/contributors/0xsyr0/Awesome-Cybersecurity-Handbooks)</br>
 ![CI/CD Pipeline](https://github.com/juninmd/Awesome-Cybersecurity-Handbooks/actions/workflows/ci.yml/badge.svg) [![codecov](https://codecov.io/gh/juninmd/Awesome-Cybersecurity-Handbooks/branch/main/graph/badge.svg)](https://codecov.io/gh/juninmd/Awesome-Cybersecurity-Handbooks) ![GitHub Pages](https://img.shields.io/github/deployments/juninmd/Awesome-Cybersecurity-Handbooks/github-pages)
 
+## Security
+
+This project takes security seriously. Please review our [Security Policy](SECURITY.md) for details on our security practices and how to report vulnerabilities.
+
 A huge chunk of my personal notes since I started playing CTFs and working as a red teamer. These are living documents and I updated or add to them relatively often.
 
 > [!IMPORTANT]
