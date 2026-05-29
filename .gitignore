@@ -29,3 +29,13 @@ Thumbs.db
 test-results.xml
 .coverage
 htmlcov/
+
+ # Environment and secrets
+ .env
+ .env.local
+ .env.*.local
+ *.key
+ *.pem
+ *.p12
+ secrets/
+ config/secrets.yml
