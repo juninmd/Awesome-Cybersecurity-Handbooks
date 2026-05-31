@@ -2,7 +2,7 @@
 
 ## Reporting a Vulnerability
 
-Please report security vulnerabilities by opening an issue or contacting the maintainers directly.
+Please report security vulnerabilities privately by contacting the maintainers directly or using GitHub's private vulnerability reporting. Please do not open public issues for security vulnerabilities.
 
 ## Supported Versions
 
